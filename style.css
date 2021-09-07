@@ -368,7 +368,10 @@ button:focus {
     position: relative;
     z-index: 2;
 }
-
+.navbar-header .keywords {
+    color: #cccccc;
+    font-size: 1px;
+}
 
 
     #name       {  margin-bottom: 1rem; }
@@ -700,6 +703,7 @@ a {
 }
 .keywords {
     margin-bottom: 2rem;
+    color: #F3976C;
 }
 .container {
     max-width: 1000px;
