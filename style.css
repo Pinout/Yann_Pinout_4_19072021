@@ -289,7 +289,9 @@ button:focus {
     padding-right: 0;
     padding-left: 0;
 }
-
+.row {
+    flex-direction: column;
+}
 #bloc-1-hero h1 {
     font-size: 32px;
 }
@@ -832,7 +834,7 @@ h4 {
 .btn-atomic-tangerine {
     background: #44080F;
     color: #FFFFFF!important;
-    border-radius: 3 rem;
+    border-radius: 3rem;
 }
 
 .btn-atomic-tangerine:hover {
@@ -901,13 +903,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -926,8 +928,8 @@ h4 {
         position: relative;
     }
     .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     .bloc-group,
     .bloc-group .bloc {
@@ -937,8 +939,8 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     .form-control {
         height: 2rem;
